@@ -44,6 +44,25 @@ To install and run the project locally, follow these steps:
     run angualar documentation  :: npm run compodoc
     visite angular documentation by open index.html that you find in /Documentation
 
+    for database optmization we used sharding for big data for optimization we use indexing and normalization , 
+    for caching we used daatabse caching in one table 
+    for tasking and automated thread we use celery and redis server 
+
+    in general News API has protected his api by not letting developers scrapping all the news , there was two method 
+    one is top headlines which is limited to 36 articles at maximum with some filter options
+    for everything aritclies we cannot get everything unless we set at least two filter as domain and sources 
+    and there is no category filter when we deal with every article .
+    the best way to use news api freindly and free is to use scrapping but that is too limited 
+   
+    another business case is whene we make news app based on news api but based on user client we can store his search on our database 
+    and then make suggestio based on his criteriia and matching pattern . 
+
+    for celery it was good invesetesment so that how we can automate tasks and discuss with the hardware by threads . it is good way that can connect the web developpment with 
+    system engineers or auomatization.
+    
+
+    thank you very much 
+
 Usage
 
 Once the installation is complete, you can access the application by navigating to http://localhost:4200 in your web browser. From there, you can browse news articles, search for specific topics, and filter news by category.
