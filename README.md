@@ -23,7 +23,7 @@ Installation
 To install and run the project locally, follow these steps:
 
     Clone the repository: git clone [<repository-url>](https://github.com/iron2017/newApp.git)
-    Navigate to the backend directory: cd backend
+    Navigate to the backend directory: cd ./
     Install Django and other dependencies: pip install -r requirements.txt
     sudo apt-get update
     sudo apt-get install postgresql postgresql-contrib
@@ -37,7 +37,7 @@ To install and run the project locally, follow these steps:
     to start celery for priodic update :: 
     celery -A your_project worker --loglevel=info
     celery -A your_project beat --loglevel=info
-    Navigate to the frontend directory: cd frontend
+    Navigate to the frontend directory: cd news_front
     Install Angular CLI globally: npm install -g @angular/cli
     Install project dependencies: npm install
     Start the Angular development server: ng serve
