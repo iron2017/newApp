@@ -33,6 +33,7 @@ To install and run the project locally, follow these steps:
     pip install drf-yasg
     Run migrations to create the database: python manage.py migrate
     Start the Django server: python manage.py runserver
+    visit http://localhost:8000/swagger/ for swagger
     to start celery for priodic update :: 
     celery -A your_project worker --loglevel=info
     celery -A your_project beat --loglevel=info
@@ -40,7 +41,8 @@ To install and run the project locally, follow these steps:
     Install Angular CLI globally: npm install -g @angular/cli
     Install project dependencies: npm install
     Start the Angular development server: ng serve
-    start angualar documentation :: npm run compodoc
+    run angualar documentation  :: npm run compodoc
+    visite angular documentation by open index.html that you find in /Documentation
 
 Usage
 
