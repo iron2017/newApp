@@ -30,6 +30,7 @@ To install and run the project locally, follow these steps:
     create db names news
     sudo apt-get update
     sudo apt-get install redis-server
+    pip install drf-yasg
     Run migrations to create the database: python manage.py migrate
     Start the Django server: python manage.py runserver
     to start celery for priodic update :: 
