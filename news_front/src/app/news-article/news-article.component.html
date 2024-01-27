@@ -1,0 +1,13 @@
+<div class="max-w-md mx-auto bg-gray-100  shadow-md overflow-hidden md:max-w-2xl">
+  <div class="md:flex">
+    <div class="md:flex">
+      <img mat-card-image class="max-h-48 w-80 object-cover md:w-80" [src]="article?.urlToImage" alt="News Image">
+    </div>
+    <div class="p-8 h-48">
+      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{ article?.source?.name }}</div>
+      <a href="{{ article?.url }}" target="_blank" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{ article?.title }}</a>
+      <p class="mt-2 text-gray-500">{{ article?.description }}</p>
+    </div>
+  </div>
+</div>
+

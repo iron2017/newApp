@@ -1,0 +1,4 @@
+Normalize the Database:
+
+    Normalize the database schema to eliminate redundancy and improve data integrity.
+    Use primary and foreign keys to establish relationships between tables.

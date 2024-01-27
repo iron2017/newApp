@@ -1,0 +1,40 @@
+<div class="min-h-screen flex flex-col justify-between">
+  <!-- Main content -->
+  <app-search (searchEvent)="onSearch($event)"></app-search>
+  <div class="container mx-auto py-8">
+    <div class="grid grid-cols-3 gap-6 md:grid-cols-3 lg:grid-cols-3">
+      <!-- Check if articles array is not empty -->
+      <ng-container *ngIf="articles && articles.length > 0; else noDataTemplate">
+        <app-news-article *ngFor="let article of articles" [article]="article"></app-news-article>
+      </ng-container>
+    </div>
+  </div>
+
+  <!-- Pagination component -->
+  <div class="bg-gray-100 dark:bg-gray-800">
+    <div class="container mx-auto py-4">
+      <app-pagination [currentPage]="currentPage" [totalCount]="totalCount" 
+                (prev)="prevPage()" (next)="nextPage()" (pageChange)="onPageChange($event)">
+</app-pagination>
+
+    </div>
+  </div>
+
+  <!-- No data template -->
+<ng-template #noDataTemplate>
+  <div class="absolute inset-0 flex justify-center items-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md">
+      <!-- Your SVG logo here -->
+      <svg class="w-16 h-16 text-gray-500 dark:text-gray-300 mx-auto mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10"></circle>
+  <line x1="12" y1="16" x2="12" y2="12"></line>
+  <line x1="12" y1="8" x2="12" y2="8"></line>
+</svg>
+
+      <p class="text-gray-500 dark:text-gray-300 text-center">No data available</p>
+    </div>
+  </div>
+</ng-template>
+
+</div>
+
