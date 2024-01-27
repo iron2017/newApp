@@ -22,7 +22,7 @@ Installation
 
 To install and run the project locally, follow these steps:
 
-    Clone the repository: git clone <repository-url>
+    Clone the repository: git clone [<repository-url>](https://github.com/iron2017/newApp.git)
     Navigate to the backend directory: cd backend
     Install Django and other dependencies: pip install -r requirements.txt
     sudo apt-get update
